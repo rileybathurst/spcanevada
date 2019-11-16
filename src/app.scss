@@ -114,11 +114,11 @@ header {
   background: linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%);
   padding: 1em;
   margin: 1em;
-  grid-template-columns: 1fr 1fr;
 
   article {
     background: black;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 2em;
     padding: 2em;
   }
