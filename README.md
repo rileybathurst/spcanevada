@@ -4,4 +4,4 @@ Pitch project for Noble Studios
 
     npm start
 
-check the github
+check the github repo
