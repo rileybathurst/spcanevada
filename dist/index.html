@@ -3,18 +3,36 @@
  <head>
    <title>SPCA of Northern Nevada</title>
    <link rel="stylesheet" href="bundle.css">
+   <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
  </head>
  <body>
+
+    <div id="minimenu" class="hide-for-print">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ADOPT</a></li>
+            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="#">DONATE</a></li>
+            <hr>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROGRAMS</a></li>
+            <li><a href="#">SUPPORT US</a></li>
+            <li><a href="#">THRIFT STORE</a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
      <header>
-        <img src="img/logo.png" alt="spca logo" class="logo">
-        <nav class="button">MENU</nav>
+        <img src="img/logo-update.png" alt="spca logo" class="logo">
+        <button onclick="tMenu()" id="mm" class="hide-for-print button">MENU</button>
         <img src="img/header.jpg" alt="cat" class="header-image">
         <a href="#" id="finder" class="button">PET FINDER</a>
     </header>
 
     <section id="about">
-        <h2>WELCOME TO THE SPCA Of NORTHERN NEVADA</h2>
-        <p>Thank you for visiting the website of the SPCA of Northern Nevada. We were established by volunteers in 1998 as Nevada&apos;s first no-kill animal shelter.  Our mission is to be an innovative regional leader in responsible treatment of homeless dogs and cats, primarily through their rescue and placement in forever loving homes, and by promoting spaying and neutering to control pet overpopulation. We accomplish our mission with dedication to our core values and a lifetime commitment to our animals.</p>
+        <h2>WELCOME TO THE SPCA OF NORTHERN NEVADA</h2>
+        <p>Thank you for visiting the website of the SPCA of Northern Nevada. We were established by volunteers in 1998 as Nevada’s first no-kill animal shelter.  Our mission is to be an innovative regional leader in responsible treatment of homeless dogs and cats, primarily through their rescue and placement in forever loving homes, and by promoting spaying and neutering to control pet overpopulation. We accomplish our mission with dedication to our core values and a lifetime commitment to our animals.</p>
     </section>
 
     <section id="do-it-dogs" class="donate-box">
@@ -61,7 +79,7 @@
 
     <footer>
         <div> <!-- needed for grid overlay -->
-            <img src="img/logo.png" class="footer-logo">
+            <img src="img/logo-update.png" class="footer-logo">
 
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -85,7 +103,7 @@
             <p><a href="#">(775) 324-7773</a></p>
             <p><a href="#">info@spcanevada.org</a></p>
 
-            <h5>SOCIAL</h5>
+            <h5 id="social-title">SOCIAL</h5>
             <ul id="social-icons">
                 <li><a href="#"><img src="img/f_logo_RGB-Blue_1024.png"></a></li>
                 <li><a href="#"><img src="img/IG_Glyph_Fill.png"></a></li>
@@ -96,15 +114,13 @@
                 <h5>JOIN OUR NEWSLETTER</h5>
                 <form>
                     <input type="email">
-                    <input type="submit">
+                    <input type="submit" value="Subscribe!">
                 </form>
                 <p>And don’t worry, we hate spam too! You can unsubscribe at anytime.</p>
             </section>
         </div>
 
         <img src="img/footer.jpg">
-
-        <p>test</p>
     </footer>
 
    <script src="bundle.js" async></script>
