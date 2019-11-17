@@ -38,6 +38,11 @@ a {
   color: #6DD5ED;
 }
 
+a:hover {
+  color: rgb(254,172,94);
+  text-decoration: line-through;
+}
+
 img {
   max-width: 100%;
 }
@@ -57,6 +62,11 @@ body {
   text-align: center;
   text-decoration: none;
   color: black;
+}
+
+.button:hover {
+  background: rgb(254,172,94);
+  background: linear-gradient(141deg, rgba(254,172,94,1) 0%, rgba(236,47,75,1) 100%);
 }
 
 header {
@@ -89,6 +99,11 @@ header {
     font-size: 1em;
     z-index: 2;
   }
+
+  form {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 #about {
@@ -96,6 +111,8 @@ header {
   background: linear-gradient(121deg, rgba(255,255,255,1) 0%, rgba(109,213,237,1) 100%);
   padding: 2rem;
   display: grid;
+  max-width: 88rem;
+  margin: 0 auto;
 
   > h2 {
     background: black;
@@ -133,7 +150,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em;
-    padding: 2em;
   }
 
   h3 {
@@ -141,6 +157,7 @@ header {
     align-self: center;
     grid-row: 1;
     z-index: 2;
+    margin: 2em;
   }
 
   a {
@@ -150,11 +167,17 @@ header {
     -webkit-text-stroke-color: #6DD5ED;
   }
 
+  a:hover {
+    -webkit-text-stroke-color: rgb(254,172,94);
+    background: none;
+  }
+
   img {
     grid-column: 1/3;
     // margin: 2em;
     max-width: 100%;
     grid-row: 1;
+    place-self: end;
   }
 }
 
@@ -164,6 +187,12 @@ header {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: 98rem) {
+    margin: 2rem;
+    margin-bottom: 8em;
+  }
+
   h3 {
     grid-column: 2;
     grid-row: 1;
@@ -189,6 +218,10 @@ header {
   a {
     color: black;
   }
+
+  a:hover {
+    text-decoration: strike;
+  }
 }
 
 #news {
@@ -197,6 +230,11 @@ header {
   background: rgb(254,172,94);
   background: linear-gradient(141deg, rgba(254,172,94,1) 0%, rgba(236,47,75,1) 100%);
   padding: 2rem;
+
+  @media (min-width: 98rem) {
+    margin: 2rem;
+    margin-top: 8em;
+  }
 
   h3 {
     grid-column: 1;
@@ -252,11 +290,19 @@ header {
   background: linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%);
   display: grid;
   padding: 2rem;
+  max-width: 88rem;
+  margin: 0 auto;
 
   h3 {
     grid-row: 2;
     grid-column: 1;
     font-size: 2.441em;
+
+    @media (min-width: 98rem) {
+      grid-row: 1;
+      grid-column: 1;
+      align-self: end;
+    }
 
     a {
       color: black;
@@ -266,21 +312,29 @@ header {
   img {
     grid-row: 1;
     grid-column: 1;
+
+    @media (min-width: 98rem) {
+      grid-row: 1;
+      grid-column: 2;
+    }
   }
 }
 
 footer {
   display: grid;
   font-size: 1.25em;
+  margin-top: 3rem;
 
   div, img {
     grid-row: 1;
     grid-column: 1;
   }
 
-  div {
+  > div {
     z-index: 2;
     padding: 2rem;
+    max-width: 88rem;
+    margin: 0 auto;
   }
 
   > img {
@@ -330,6 +384,10 @@ footer {
         width: 100%;
         align-items: flex-end;
       }
+
+      >a :hover {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -346,6 +404,23 @@ footer {
     border: none;
     font-size: 1em;
   }
+
+  input[type="submit"]:hover {
+    color: rgb(254,172,94);
+    text-decoration: line-through;
+  }
+
+  .footer-flex {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    > ul, > div, > section {
+      flex: 0 0 42rem;
+    }
+  }
 }
 
 @media print {
@@ -356,8 +431,7 @@ footer {
 
 #minimenu {
   background: black;
-  position: absolute;
-  // z-index: 3; // above page below menu button
+  position: fixed; // key to working on safari. absolute works on ff and chrome
   width: 33%;
   height: 100vh; // needs fixing to be full height or stuck to the side
   left: 100%;
@@ -377,9 +451,56 @@ footer {
 
 .minimenu-open {
   transform: translate3d(-100%, 0, 0);
+  overflow-x: hidden;
 }
 
 #minimenu:target { // no-js backup // I could do something with smooth scroll etc and make it easier but the main problem is the click outside to remove
-  background: palegoldenrod;
   transform: translate3d(-100%, 0, 0);
+}
+
+.donate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > section {
+    flex: 1 0 42rem;
+
+    @media (min-width: 98rem) {
+      max-width: 42rem;
+    }
+  }
+}
+
+.select-css { // [https://www.filamentgroup.com/lab/select-css.html]
+  font-size: 1em;
+  padding: 1em;
+  padding-right: 2em;
+  border: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%); // this is the drop icon
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+  display: none;
+}
+.select-css:hover {
+  border-color: #888;
+}
+.select-css:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+.select-css option {
+  font-weight:normal;
+}
+
+.io-push {
+  
 }
