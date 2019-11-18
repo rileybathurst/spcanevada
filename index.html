@@ -24,10 +24,9 @@
     </div>
 
      <header>
-        <img src="img/logo-update.png" alt="spca logo" class="logo">
+        <a href="#" class="logo"><img src="img/logo-update.png" alt="spca logo"></a>
         <button onclick="tMenu()" id="mm" class="hide-for-print button">MENU</button>
-        <img src="img/header.jpg" alt="cat" class="header-image">
-        <!-- <a href="#" id="finder" class="button">PET FINDER</a> -->
+        <img src="img/header.jpg" alt="cat" class="header-image io-push">
         <form>
             <select class="select-css">
                 <option selected>PET FINDER</option>
@@ -35,6 +34,11 @@
                 <option>DOG</option>
             </select>
         </form>
+        <!-- <nav> this is a kinda messy little maybe thing im just not sure about
+            <a href="#">Adopt</a>
+            <a href="#">Donate</a>
+            <a href="#">Volunteer</a>
+        </nav> -->
     </header>
 
     <section id="about">
@@ -43,17 +47,19 @@
     </section>
 
     <div class="donate">
-        <section id="do-it-dogs" class="donate-box io-push">
+        <section id="do-it-dogs" class="donate-box">
             <article>
                 <h3><a href="#">DO IT FOR THE DOGS</a></h3>
-                <img src="img/do-it-dogs.jpeg">
+                <a href="#" class="donate-image io-push"><img src="img/do-it-dogs.jpeg"></a>
+                <h4 class="handwritten">Adopt</h4>
             </article>
         </section>
 
-        <section id="care-for-cats" class="donate-box io-push">
+        <section id="care-for-cats" class="donate-box">
             <article>
                 <h3><a href="#">CARE FOR THE CATS</a></h3>
-                <img src="img/care-for-cats.jpeg">
+                <a href="#" class="donate-image io-push"><img src="img/care-for-cats.jpeg"></a>
+                <h4 class="handwritten">Today</h4>
             </article>
         </section>
 
@@ -63,14 +69,14 @@
             PET<br>
             <span class="half-height">OF THE</span><br>
             WEEK</a></h3>
-        <img src="img/atta.jpg">
-        <h4 class="handwritten white-words">Atta</h4>
+            <a href="#" class="potw-image io-push"><img src="img/atta.jpg"></a>
+        <h4 class="handwritten white-words"><a href="#">Atta</a></h4>
     </section>
 
     <section id="news">
         <h3><a href="#">NEWS &amp; EVENTS</a></h3>
-        <img src="img/giving-tuesday.jpg" class="io-push">
-        <h4 class="handwritten">Giving Tuesday</h4>
+        <a href="#" class="news-image io-push"><img src="img/giving-tuesday.jpg" class="io-push"></a>
+        <h4 class="handwritten"><a href="#">Giving Tuesday</a></h4>
     </section>
 
     <section>
@@ -84,12 +90,13 @@
 
     <section id="volunteer">
         <h3><a href="#">VOLUNTEER</a></h3>
-        <img src="img/vaccinate.jpeg">
+        <a href="#" class="volunteer-image io-push"><img src="img/vaccinate.jpeg"></a>
+        <h4 class="handwritten">Make a<br>difference</h4>
     </section>
 
     <footer>
         <div> <!-- needed for grid overlay -->
-            <img src="img/logo-update.png" class="footer-logo">
+            <a href="#" class="footer-logo io-push"><img src="img/logo-update.png"></a>
 
             <div class="footer-flex">
                 <ul>
@@ -111,7 +118,7 @@
                 </ul>
 
                 <div>
-                    <p><a href="#">4950 Spectrum Blvd Reno, NV 89512</a></p>
+                    <p><a href="#">4950 Spectrum Blvd Reno NV 89512</a></p>
                     <p><a href="#">(775) 324-7773</a></p>
                     <p><a href="#">info@spcanevada.org</a></p>
 
@@ -129,12 +136,13 @@
                         <input type="email">
                         <input type="submit" value="Subscribe!">
                     </form>
-                    <p>And don’t worry, we hate spam too! You can unsubscribe at anytime.</p>
+                    <p class="text_small">And don’t worry, we hate spam too!<br>You can unsubscribe at anytime.</p>
                 </section>
             </div><!-- .footer-flex -->
         </div>
 
         <img src="img/footer.jpg">
+        <h4 class="handwritten">the biggest<br>little rescue</h4>
     </footer>
 
    <script src="bundle.js" async></script>

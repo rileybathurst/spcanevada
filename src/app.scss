@@ -1,6 +1,6 @@
 // @import url('https://fonts.googleapis.com/css?family=Poppins:400|Poppins:400');
 
-html {font-size: 16px;}
+html, .p {font-size: 16px;}
 
 body {
   background-color: white;
@@ -19,18 +19,18 @@ h1, h2, h3, h4, h5 {
   line-height: 1.15;
 }
 
-h1 {
+h1, .h1 {
   margin-top: 0;
   font-size: 3.052em;
 }
 
-h2 {font-size: 2.441em;}
+h2, .h2 {font-size: 2.441em;}
 
-h3 {font-size: 1.953em;}
+h3, .h3 {font-size: 1.953em;}
 
-h4 {font-size: 1.563em;}
+h4, .h4 {font-size: 1.563em;}
 
-h5 {font-size: 1.25em;}
+h5, .h5 {font-size: 1.25em;}
 
 small, .text_small {font-size: 0.8em;}
 
@@ -41,6 +41,10 @@ a {
 a:hover {
   color: rgb(254,172,94);
   text-decoration: line-through;
+}
+
+a > img:hover {
+  opacity: 0.5;
 }
 
 img {
@@ -104,6 +108,24 @@ header {
     display: flex;
     justify-content: center;
   }
+
+  nav {
+    display: none;
+
+    @media (min-width: 66em) {
+      display: flex;
+      grid-row: 1/3;
+      grid-column: 1;
+      font-size: 1.953em;
+      writing-mode: vertical-lr;
+      justify-self: start; // keeps the click area to the text
+    }
+
+    > a {
+      margin-bottom: 1em;
+
+    }
+  }
 }
 
 #about {
@@ -111,7 +133,7 @@ header {
   background: linear-gradient(121deg, rgba(255,255,255,1) 0%, rgba(109,213,237,1) 100%);
   padding: 2rem;
   display: grid;
-  max-width: 88rem;
+  max-width: 66rem;
   margin: 0 auto;
 
   > h2 {
@@ -122,7 +144,7 @@ header {
     grid-column: 1/3;
   }
 
-  > p {
+  > p, main {
     background: white;
     padding: 1em;
     grid-row: 2/4;
@@ -134,7 +156,7 @@ header {
     }
 
     @media (min-width: 66em) {
-      margin-top: 2em;
+      margin-top: 4em;
     }
   }
 }
@@ -165,6 +187,7 @@ header {
     font-size: 3em;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #6DD5ED;
+    text-decoration: none;
   }
 
   a:hover {
@@ -172,12 +195,21 @@ header {
     background: none;
   }
 
-  img {
+  .donate-image {
     grid-column: 1/3;
     // margin: 2em;
     max-width: 100%;
     grid-row: 1;
     place-self: end;
+  }
+
+  h4 {
+    grid-row: 1;
+    grid-column: 1/3;
+    justify-self: end;
+    transform: rotate(-10deg);
+    color: white;
+    z-index: 3;
   }
 }
 
@@ -187,8 +219,9 @@ header {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 1em;
 
-  @media (min-width: 98rem) {
+  @media (min-width: 66rem) {
     margin: 2rem;
     margin-bottom: 8em;
   }
@@ -200,19 +233,23 @@ header {
     align-self: center;
   }
 
-  img {
+  .potw-image {
     width: 100%;
     grid-column: 1;
     grid-row: 1;
-    // place-self: center;
+    align-self: end;
   }
 
   h4 {
     grid-row: 1;
     grid-column: 1;
     place-self: end;
-    margin: 3rem;
+    margin: 1rem;
     transform: rotate(-10deg);
+
+    a {
+      color: white;
+    }
   }
 
   a {
@@ -231,7 +268,7 @@ header {
   background: linear-gradient(141deg, rgba(254,172,94,1) 0%, rgba(236,47,75,1) 100%);
   padding: 2rem;
 
-  @media (min-width: 98rem) {
+  @media (min-width: 66rem) {
     margin: 2rem;
     margin-top: 8em;
   }
@@ -247,7 +284,7 @@ header {
       }
   }
 
-  img {
+  .news-image {
     grid-column: 2;
     grid-row: 1;
   }
@@ -257,8 +294,12 @@ header {
     grid-column: 2;
     grid-row: 1;
     align-self: end;
-    margin: 3rem;
+    margin: 1rem;
     transform: rotate(-10deg);
+
+    a {
+      color: #333;
+    }
   }
 }
 
@@ -268,7 +309,7 @@ header {
 
 .handwritten {
   font-family: 'Covered By Your Grace', cursive;
-  font-size: 3.052em;
+  font-size: 2.441em;
 }
 
 .white-words {
@@ -290,7 +331,7 @@ header {
   background: linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%);
   display: grid;
   padding: 2rem;
-  max-width: 88rem;
+  max-width: 66rem;
   margin: 0 auto;
 
   h3 {
@@ -298,10 +339,11 @@ header {
     grid-column: 1;
     font-size: 2.441em;
 
-    @media (min-width: 98rem) {
+    @media (min-width: 66rem) {
       grid-row: 1;
       grid-column: 1;
       align-self: end;
+      margin-right: 1em;
     }
 
     a {
@@ -309,14 +351,22 @@ header {
     }
   }
 
-  img {
+  .volunteer-image {
     grid-row: 1;
     grid-column: 1;
 
-    @media (min-width: 98rem) {
+    @media (min-width: 66rem) {
       grid-row: 1;
       grid-column: 2;
     }
+  }
+
+  h4 {
+    grid-row: 1;
+    grid-column: 1;
+    color: white;
+    transform: rotate(-10deg);
+    margin: 1em;
   }
 }
 
@@ -325,7 +375,7 @@ footer {
   font-size: 1.25em;
   margin-top: 3rem;
 
-  div, img {
+  > div, > img {
     grid-row: 1;
     grid-column: 1;
   }
@@ -333,7 +383,7 @@ footer {
   > div {
     z-index: 2;
     padding: 2rem;
-    max-width: 88rem;
+    max-width: 66rem;
     margin: 0 auto;
   }
 
@@ -418,7 +468,21 @@ footer {
     justify-content: space-between;
   
     > ul, > div, > section {
-      flex: 0 0 42rem;
+      flex: 0 0 27rem;
+    }
+  }
+
+  h4 {
+    display: none;
+
+    @media (min-width: 66em) {
+      display: inline;
+      grid-row: 1;
+      grid-column: 1;
+      justify-self: end;
+      transform: rotate(-10deg);
+      color: #333;
+      text-align: center;
     }
   }
 }
@@ -462,13 +526,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 70rem;
+  margin: 0 auto;
 
   > section {
-    flex: 1 0 42rem;
-
-    @media (min-width: 98rem) {
-      max-width: 42rem;
-    }
+    flex: 1 0 27rem;
   }
 }
 
@@ -501,6 +563,57 @@ footer {
   font-weight:normal;
 }
 
-.io-push {
-  
+.color-block {
+  display: flex;
+  align-items: center;
+}
+
+.style-color {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+
+.style-gradient {
+  width: 3em; // this whole thing is a wierd hack
+  height: 2em;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+
+.color-background-black {
+  background: black;
+}
+
+.color-background-primary {
+  background: #6DD5ED;
+}
+
+.color-background-secondary {
+  background: rgb(254,172,94);
+}
+
+.color-background-text {
+  background: #333;
+}
+
+.color-background-white {
+  background: white;
+}
+
+.color-background-primary-gradient {
+  background: linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%);
+}
+
+.color-background-primary-white-gradient {
+  background: linear-gradient(121deg, white 0%, #6dd5ed 100%);
+}
+
+.color-background-secondary-gradient {
+  background: linear-gradient(141deg, rgba(254,172,94,1) 0%, rgba(236,47,75,1) 100%);
+}
+
+.color-background-highlight-gradient {
+  background: linear-gradient(141deg, #4bc0c8 0%, #c779d0 50%, #feac5e 100%);
 }

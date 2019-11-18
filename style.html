@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+ <head>
+   <title>SPCA of Northern Nevada - Style Guide</title>
+   <link rel="stylesheet" href="dist/bundle.css">
+   <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+ </head>
+ <body>
+
+    <div id="minimenu" class="hide-for-print">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ADOPT</a></li>
+            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="#">DONATE</a></li>
+            <hr>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROGRAMS</a></li>
+            <li><a href="#">SUPPORT US</a></li>
+            <li><a href="#">THRIFT STORE</a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+     <header>
+        <img src="img/logo-update.png" alt="spca logo" class="logo">
+        <button onclick="tMenu()" id="mm" class="hide-for-print button">MENU</button>
+        <img src="img/header.jpg" alt="cat" class="header-image">
+    </header>
+
+    <section id="about">
+        <h1>Style Guide</h1>
+        <main>
+            <h2>Color</h2>
+            <h3 class="color-block"><span class="style-color color-background-black">&nbsp;</span>Background #000</h3>
+            <h3 class="color-block"><span class="style-color color-background-primary">&nbsp;</span>Primary #6DD5ED</h3>
+            <h3 class="color-block"><span class="style-color color-background-secondary">&nbsp;</span>Secondary rgb(254,172,94)</h3>
+            <h3 class="color-block"><span class="style-color color-background-text">&nbsp;</span>text #333</h3>
+            <h3 class="color-block"><span class="style-color color-background-white">&nbsp;</span>White #fff</h3>
+            <h3 class="color-block"><span class="style-gradient color-background-primary-gradient">&nbsp;</span>Primary Gradient linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%);</h3>
+            <h3 class="color-block"><span class="style-gradient color-background-primary-white-gradient">&nbsp;</span>Primary to White Gradient linear-gradient(141deg, rgba(109,213,237,1) 0%, rgba(33,147,176,1) 100%);</h3>
+            <h3 class="color-block"><span class="style-gradient color-background-secondary-gradient">&nbsp;</span>Seconday Gradient linear-gradient(141deg, rgba(254,172,94,1) 0%, rgba(236,47,75,1) 100%);</h3>
+            <h3 class="color-block"><span class="style-gradient color-background-highlight-gradient">&nbsp;</span>Highlight Gradient linear-gradient(141deg, rgba(254,172,94,1) 0%, rgba(236,47,75,1) 100%);</h3>
+
+            <hr>
+
+            <h2>Font</h2>
+            <h3 class="h1">H1 font-size: 3.052em</h3>
+            <h3 class="h2">H2 font-size: 2.441em</h3>
+            <h3 class="h3">H3 font-size: 1.953em</h3>
+            <h3 class="h4">H4 font-size: 1.563em</h3>
+            <h3 class="h5">H5 font-size: 1.25em</h3>
+            <h3 class="p">p font-size: 16px</h3>
+            <h3>body font-family: "Helvetica-Neue", sans-serif;</h3>
+            <h3 class="handwritten">handwritten font-family: 'Covered By Your Grace', cursive;</h3>
+        </main>
+    </section>
+
+    <footer>
+        <div> <!-- needed for grid overlay -->
+            <img src="img/logo-update.png" class="footer-logo">
+
+            <div class="footer-flex">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">VOLUNTEER</a></li>
+                    <li><a href="#">RESOURCES</a></li>
+                    <li><a href="#">EMPLOYMENT OPPORTUNITIES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">NEWS &amp; EVENTS</a></li>
+                    <li><a href="#">PROGRAMS</a></li>
+                    <li><a href="#">THRIFT STORE</a></li>
+                    <li><a href="#">EVENTS CALENDAR</a></li>
+                    <li><a href="#">SUPPORT US</a></li>
+                    <li><a href="#">DONATE</a></li>
+                    <li><a href="#">SITE MAP</a></li>
+                </ul>
+
+                <div>
+                    <p><a href="#">4950 Spectrum Blvd Reno, NV 89512</a></p>
+                    <p><a href="#">(775) 324-7773</a></p>
+                    <p><a href="#">info@spcanevada.org</a></p>
+
+                    <h5 id="social-title">SOCIAL</h5>
+                    <ul id="social-icons">
+                        <li><a href="#"><img src="img/f_logo_RGB-Blue_1024.png"></a></li>
+                        <li><a href="#"><img src="img/IG_Glyph_Fill.png"></a></li>
+                        <li><a href="#"><img src="img/Twitter_Logo_Blue-crop.png"></a></li>
+                    </ul>
+                </div>
+
+                <section>
+                    <h5>JOIN OUR NEWSLETTER</h5>
+                    <form>
+                        <input type="email">
+                        <input type="submit" value="Subscribe!">
+                    </form>
+                    <p>And don’t worry, we hate spam too! You can unsubscribe at anytime.</p>
+                </section>
+            </div><!-- .footer-flex -->
+        </div>
+
+        <img src="img/footer.jpg">
+    </footer>
+
+   <script src="bundle.js" async></script>
+ </body>
+</html> 
