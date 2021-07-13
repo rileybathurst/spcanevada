@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
- <head>
-   <title>SPCA of Northern Nevada</title>
-   <link rel="stylesheet" href="bundle.css">
-   <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
- </head>
- <body>
+
+<head>
+    <title>SPCA of Northern Nevada</title>
+    <link rel="stylesheet" href="./src/app.scss">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+</head>
+
+<body>
 
     <div id="minimenu" class="hide-for-print">
         <ul>
@@ -23,7 +25,7 @@
         </ul>
     </div>
 
-     <header>
+    <header>
         <a href="#" class="logo"><img src="img/logo-update.png" alt="spca logo"></a>
         <button onclick="tMenu()" id="mm" class="hide-for-print button">MENU</button>
         <img src="img/header.jpg" alt="cat" class="header-image io-push">
@@ -43,7 +45,11 @@
 
     <section id="about">
         <h2>WELCOME TO THE SPCA OF NORTHERN NEVADA</h2>
-        <p>Thank you for visiting the website of the SPCA of Northern Nevada. We were established by volunteers in 1998 as Nevada’s first no-kill animal shelter.  Our mission is to be an innovative regional leader in responsible treatment of homeless dogs and cats, primarily through their rescue and placement in forever loving homes, and by promoting spaying and neutering to control pet overpopulation. We accomplish our mission with dedication to our core values and a lifetime commitment to our animals.</p>
+        <p>Thank you for visiting the website of the SPCA of Northern Nevada. We were established by volunteers in 1998
+            as Nevada’s first no-kill animal shelter. Our mission is to be an innovative regional leader in responsible
+            treatment of homeless dogs and cats, primarily through their rescue and placement in forever loving homes,
+            and by promoting spaying and neutering to control pet overpopulation. We accomplish our mission with
+            dedication to our core values and a lifetime commitment to our animals.</p>
     </section>
 
     <div class="donate">
@@ -64,29 +70,29 @@
         </section>
 
 
-    <section id="pet-of-the-week">
-        <h3><a href=#>
-            PET<br>
-            <span class="half-height">OF THE</span><br>
-            WEEK</a></h3>
+        <section id="pet-of-the-week">
+            <h3><a href=#>
+                    PET<br>
+                    <span class="half-height">OF THE</span><br>
+                    WEEK</a></h3>
             <a href="#" class="potw-image io-push"><img src="img/atta.jpg"></a>
-        <h4 class="handwritten white-words"><a href="#">Atta</a></h4>
-    </section>
+            <h4 class="handwritten white-words"><a href="#">Atta</a></h4>
+        </section>
 
-    <section id="news">
-        <h3><a href="#">NEWS &amp; EVENTS</a></h3>
-        <a href="#" class="news-image io-push"><img src="img/giving-tuesday.jpg" class="io-push"></a>
-        <h4 class="handwritten"><a href="#">Giving Tuesday</a></h4>
-    </section>
+        <section id="news">
+            <h3><a href="#">NEWS &amp; EVENTS</a></h3>
+            <a href="#" class="news-image io-push"><img src="img/giving-tuesday.jpg" class="io-push"></a>
+            <h4 class="handwritten"><a href="#">Giving Tuesday</a></h4>
+        </section>
 
-    <section>
-        <ul id="home-middle-menu">
-            <li><a href="#">ADOPT A PET</a></li>
-            <li><a href="#">SPAY / NEUTER / VACCINATE</a></li>
-            <li><a href="#">MAKE A DONATION</a></li>
-        </ul>
-    </section>
-</div>
+        <section>
+            <ul id="home-middle-menu">
+                <li><a href="#">ADOPT A PET</a></li>
+                <li><a href="#">SPAY / NEUTER / VACCINATE</a></li>
+                <li><a href="#">MAKE A DONATION</a></li>
+            </ul>
+        </section>
+    </div>
 
     <section id="volunteer">
         <h3><a href="#">VOLUNTEER</a></h3>
@@ -95,7 +101,8 @@
     </section>
 
     <footer>
-        <div> <!-- needed for grid overlay -->
+        <div>
+            <!-- needed for grid overlay -->
             <a href="#" class="footer-logo io-push"><img src="img/logo-update.png"></a>
 
             <div class="footer-flex">
@@ -145,6 +152,7 @@
         <h4 class="handwritten">the biggest<br>little rescue</h4>
     </footer>
 
-   <script src="bundle.js" async></script>
- </body>
-</html> 
+    <script src="./src/app.js" async></script>
+</body>
+
+</html>

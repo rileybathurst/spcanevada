@@ -4,27 +4,15 @@
   "description": "Pitch project for Noble Studios",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "parcel watch *.html",
+    "dev": "parcel *.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "Riley Bathurst",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "autoprefixer": "^9.7.1",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "extract-loader": "^3.1.0",
-    "file-loader": "^4.2.0",
-    "html-loader": "^0.5.5",
-    "node-sass": "^4.13.1",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^8.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
   }
 }
