@@ -1,4 +1,4 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 
 let miniMenu = document.getElementById("minimenu"); // less complicated than a foreach or a loop with a class
 document.getElementById('mm').onclick = function changeContent() {
@@ -25,7 +25,7 @@ if ('IntersectionObserver' in window) {
     var mT = "ratioem";
 
     // Set things up.
-    window.addEventListener("load", function(event) {
+    window.addEventListener("load", function (event) {
         pusher = document.querySelectorAll(".io-push");
 
         createObserver();
@@ -51,8 +51,8 @@ if ('IntersectionObserver' in window) {
         var thresholds = [];
         var numSteps = 100;
 
-        for (var i=1.0; i<=numSteps; i++) {
-            var ratio = i/numSteps;
+        for (var i = 1.0; i <= numSteps; i++) {
+            var ratio = i / numSteps;
             thresholds.push(ratio);
         }
 
@@ -61,8 +61,8 @@ if ('IntersectionObserver' in window) {
     }
 
     function handleIntersect(entries, observer) {
-        entries.forEach(function(entry) {
-            entry.target.style.marginTop = mT.replace("ratio", (entry.intersectionRatio*5));
+        entries.forEach(function (entry) {
+            entry.target.style.marginTop = mT.replace("ratio", (entry.intersectionRatio * 5));
             prevRatio = entry.intersectionRatio;
         });
     }
