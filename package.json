@@ -12,7 +12,7 @@
   "author": "Riley Bathurst",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.35.2"
+    "parcel": "^2.0.0",
+    "sass": "^1.49.0"
   }
 }
