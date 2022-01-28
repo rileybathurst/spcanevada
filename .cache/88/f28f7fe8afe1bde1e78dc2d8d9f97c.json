@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"img/do-it-dogs.jpeg","dependencies":[{"name":"/Users/rileybathurst/Sites/spcanevada/package.json","includedInParent":true,"mtime":1643390717041}],"generated":{"js":"module.exports = \"/5da416144bdf9ef1ff4f310e7937d7c3.jpeg\";"},"sourceMaps":null,"error":null,"hash":"6bcdf066426e2feab18db553f43b99ab","cacheData":{"env":{}}}
+=======
+{"id":"img/do-it-dogs.jpeg","dependencies":[{"name":"/Users/rileybathurst/Sites/spcanevada/package.json","includedInParent":true,"mtime":1643389962765}],"generated":{"js":"module.exports = \"/5da416144bdf9ef1ff4f310e7937d7c3.jpeg\";"},"sourceMaps":null,"error":null,"hash":"6bcdf066426e2feab18db553f43b99ab","cacheData":{"env":{}}}
+>>>>>>> 4d5a75178e1b1cd398466e7b2ce7e560012dd78c

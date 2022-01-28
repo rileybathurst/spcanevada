@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"img/footer.jpg","dependencies":[{"name":"/Users/rileybathurst/Sites/spcanevada/package.json","includedInParent":true,"mtime":1643390717041}],"generated":{"js":"module.exports = \"/90e2eecf0bc3d339bd45dd19365ba88b.jpg\";"},"sourceMaps":null,"error":null,"hash":"94d6416660df724a79ef83e00dc2ba53","cacheData":{"env":{}}}
+=======
+{"id":"img/footer.jpg","dependencies":[{"name":"/Users/rileybathurst/Sites/spcanevada/package.json","includedInParent":true,"mtime":1643389962765}],"generated":{"js":"module.exports = \"/90e2eecf0bc3d339bd45dd19365ba88b.jpg\";"},"sourceMaps":null,"error":null,"hash":"94d6416660df724a79ef83e00dc2ba53","cacheData":{"env":{}}}
+>>>>>>> 4d5a75178e1b1cd398466e7b2ce7e560012dd78c
